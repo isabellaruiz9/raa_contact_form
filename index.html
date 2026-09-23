@@ -1,19 +1,77 @@
+
 <html>
-<h2>Fill out this form to send a message to the RAA!</h2>
-<form form action="https://api.web3forms.com/submit" method="POST" id="RAA website contact form" name="RAA website contact form">
-    <input type="hidden" name="access_key" value="13d6398b-75a8-4f1b-8e92-3f907cff17be"> 
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name" size="50"><br>
-  <label for="email address">Email Address:</label><br>
-  <input type="email" id="email" name="email" size="50"><br>
-  <label for="department">Department:</label><br>
-  <input type="text" id="department" name="department" size="50"><br>
-  <label for="lab">Lab:</label><br>
-  <input type="text" id="lab" name="lab" size="50"><br>
-  <label for="position">Position:</label><br>
-  <input type="text" id="position" name="position" size="50"><br>
-  <label for="question">Question/Comment(s):</label><br>
-  <textarea id="message" name="message" rows="10" cols="50"></textarea><br>
-  <input type="submit" value="Submit">
-</form>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" id="font-merriweather-css" href="//fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" type="text/css" media="all" />
+<link rel="stylesheet" id="font-roboto-css" href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" type="text/css" media="all" />
+<link rel="stylesheet" id="font-material-icons-css" href="//fonts.googleapis.com/icon?family=Material+Icons" type="text/css" media="all" />
+<link rel="stylesheet" id="font-material-icons-outlined-css" href="//fonts.googleapis.com/icon?family=Material+Icons+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" type="text/css" media="all" />
+<link rel="stylesheet" id="font-postgrotesk-css" href="https://prod-hmsraa.drupalsites.harvard.edu/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/fonts/postgrotesk.css" type="text/css" media="all" />
+<link rel="stylesheet" id="font-brandontext-css" href="https://prod-hmsraa.drupalsites.harvard.edu/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/fonts/brandontext.css" type="text/css" media="all" />
+<link rel="stylesheet" id="font-sanomat-css" href="https://prod-hmsraa.drupalsites.harvard.edu/profiles/hwp_dstan/themes/hwp_hyard/hwp-goldin/fonts/sanomat.css" type="text/css" media="all" />
+<link rel="stylesheet" id="font-libre-franklin-css" href="//fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&amp;display=swap" type="text/css" media="all" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
+<link rel="stylesheet" id="font-inter-css" href="//fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" type="text/css" media="all" />
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left">
+    <br><p style="font-family:helvetica">Any questions regarding the HMS RAA should be directed to our email address, <a href="mailto:hms_ra_association@hms.harvard.edu">hms_ra_association@hms.harvard.edu</a>.</p>
+    <p style="font-family:helvetica">You can use the form on the right to leave a message in our inbox!</p>
+  </div>
+  <div class="column right">
+    <h2 style="font-family:helvetica">Fill out this form to send a message to the RAA!</h2>
+    <form form action="https://api.web3forms.com/submit" method="POST" id="RAA website contact form" name="RAA website contact form">
+        <input type="hidden" name="access_key" value="13d6398b-75a8-4f1b-8e92-3f907cff17be"> 
+        <label for="name" style="font-family:helvetica">Name:</label><br>
+        <input type="text" id="name" name="name" size="50"><br><p></p>
+        <label for="email address" style="font-family:helvetica">Email Address:</label><br>
+        <input type="email" id="email" name="email" size="50"><br><p></p>
+        <label for="department" style="font-family:helvetica;">Department:</label><br>
+        <input type="text" id="department" name="department" size="50"><br><p></p>
+        <label for="lab" style="font-family:helvetica">Lab:</label><br>
+        <input type="text" id="lab" name="lab" size="50"><br><p></p>
+        <label for="position" style="font-family:helvetica">Position:</label><br>
+        <input type="text" id="position" name="position" size="50"><br><p></p>
+        <label for="question"style="font-family:helvetica">Question/Comment(s):</label><br>
+        <textarea id="message" name="message" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+</body>
 </html>
